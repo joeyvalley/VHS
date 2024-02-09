@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  color: var(--black);
+  text-transform: lowercase;
+}
+
+.header ul {
+  display: inline-block;
+  list-style-type: none;
+  font-family: "Museo";
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.15rem;
+}
+
+.header ul li {
+  display: inline-block;
+  padding: 0 0.125rem;
+}
+
+.header ul li.link {
+  color: var(--black);
+  transition: color ease-in-out 0.2s;
+}
+
+.header ul li.link:hover {
+  cursor: pointer;
+  color: dimgray;
+}
+
+.logo img {
+  height: 4rem;
+}
+
+.logo img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    color: var(--black);
+    text-transform: lowercase;
+  }
+
+  .header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 4rem;
+  }
+}

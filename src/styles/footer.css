@@ -1,0 +1,26 @@
+.footer {
+  color: var(--black);
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  font-size: 2rem;
+  padding: 1rem 0 0.5rem 0;
+  font-weight: 400;
+}
+
+.footer ul {
+  display: inline-block;
+  list-style-type: none;
+  font-family: "Museo";
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.15rem;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 0.35rem;
+}
