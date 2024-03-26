@@ -43,6 +43,8 @@
   height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .roster {
@@ -92,6 +94,93 @@
 
 .artist-img-container img:hover {
   cursor: pointer;
+}
+
+.splash {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-logo {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  bottom: 0;
+  right: 0;
+  background: red;
+}
+
+.splash-menu ul {
+  position: absolute;
+  display: inline-block;
+  list-style-type: none;
+  font-family: "Museo";
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: -6.5rem;
+}
+
+.splash-menu ul li {
+  display: inline;
+  padding: 0 2rem;
+}
+
+.text {
+  position: absolute;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+}
+
+.icon a {
+  color: var(--black);
+  text-decoration: none;
+  transition: color ease-in-out 0.5s;
+}
+
+.icon a:hover {
+  color: dimgray;
+
+}
+
+.text a {
+  color: var(--black);
+  text-decoration: underline;
+  transition: color ease-in-out 0.5s;
+}
+
+.text a:hover {
+  color: dimgray;
+
+}
+
+
+.splash-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 770px) {
+  .splash-logo {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
